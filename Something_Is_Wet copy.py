@@ -1,6 +1,7 @@
 # WAP - Wet Ass Pussy Madlib
 
 import extras as xs
+import random as rd
 
 # Variables
 
@@ -28,6 +29,9 @@ verb5 = (20, 'Verb: ')
 verb6 = (21, 'Verb: ')
 noun13 = (22, 'Noun: ')
 verb7 = (23, 'Verb: ')
+
+words = [pnoun1,noun1,noun2,noun3,adj1,noun4,noun5,noun6,noun7,noun8,verb1,verb2,noun9,prep1,prep2,noun10,verb3,noun11,verb4,noun12,verb5,verb6,noun13,verb7]
+rd.shuffle(words)
 
 madlib = f'\n{pnoun1} in this {noun1}\
 \nThere\'s some {pnoun1} in this {noun1}\
