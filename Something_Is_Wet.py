@@ -1,8 +1,8 @@
 # WAP - Wet Ass Pussy Madlib
 
 import extras as xs
-
-# Variables
+import random
+# Variables _words
 
 pnoun1 = input('Plural Noun: ')
 noun1 = input('Noun(building): ')
@@ -28,6 +28,8 @@ verb5 = input('Verb: ')
 verb6 = input('Verb: ')
 noun13 = input('Noun: ')
 verb7 = input('Verb: ')
+
+
 
 madlib = f'\n{pnoun1} in this {noun1}\
 \nThere\'s some {pnoun1} in this {noun1}\
