@@ -1,23 +1,42 @@
 # My Little Pony Madlib
 
 import extras as xs
+import random
 
 # variables for madlib
 
-adj1, adj2, adj3, adj4, adj5, adj6, adj7, adj8 = input('Enter 8 different adjectives: ').split(',')
-noun1, noun2, noun3, noun4, noun5 = input('Enter 5 different nouns: ').split(',')
-prep1 = input('Enter 1 preposition: ')
-verb1, verb2 = input('Enter 2 different verbs: ').split(',')
-adverb1 = input('Enter 1 adverb: ')
-pnoun1, pnoun2, pnoun3 = input('Enter 3 different pronouns: ').split(',')
+noun = [input('Noun: ') for _ in range(5)]
+random.shuffle(noun)
+
+adjs = [input('Adjectives: ') for _ in range(8)]
+random.shuffle(adjs)
+ 
+# prep = [input('Preposition: ') for _ in range(1)]
+# random.shuffle(prep)
+
+verb = [input('Verb: ')for _ in range (2)]
+random.shuffle(verb)
+
+# adverb = [input('Adverb: ') for _ in range(1)]
+# random.shuffle(adverb)
+
+pnoun = [input('Pronoun: ') for _ in range(3)]
+random.shuffle(pnoun)
+
+pnoun1,pnoun2,pnoun3 = pnoun
+adverb1 = input('adverb: ')
+verb1,verb2 = verb
+prep1 = input('preposition: ')
+noun1,noun2,noun3,noun4,noun5 = noun
+adjs1,adjs2,adjs3,adjs4,adjs5,adjs6,adjs7,adjs8 = adjs
 
 # madlib
 
-madlib = f'\nWhen I was {adj1} I was too {adj2} to make any {noun1}.\
-\nSuch {adj3} did not seem {prep1} the {noun2} it {verb1}.\
-\nBut my {adj4} {pnoun1}, you {verb2} up my {pnoun2}\
-\nAnd now the {noun3} is {adj5} {adverb1}, as {adj6} {adj7} {pnoun3}.\
-\nAnd it\'s such a {adj8} {noun4}.\n'
+madlib = f'\nWhen I was {adjs1} I was too {adjs2} to make any {noun1}.\
+\nSuch {adjs3} did not seem {prep1} the {noun2} it {verb1}.\
+\nBut my {adjs4} {pnoun1}, you {verb2} up my {pnoun2}\
+\nAnd now the {noun3} is {adjs5} {adverb1}, as {adjs6} {adjs7} {pnoun3}.\
+\nAnd it\'s such a {adjs8} {noun4}.\n'
 
 print(xs.sep)
 print(madlib)

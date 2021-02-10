@@ -3,7 +3,7 @@
 import extras as xs
 # Variables _words
 
-pnoun1 = (input('Plural Noun: '))
+pnoun1 = input('Plural Noun: ')
 noun1 = input('Noun(building): ')
 noun2 = input('Noun: ')
 noun3 = input('Noun: ')
