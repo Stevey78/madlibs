@@ -1,7 +1,6 @@
 # WAP - Wet Ass Pussy Madlib
 
 import extras as xs
-# from random import shuffle
 
 # Variables
 

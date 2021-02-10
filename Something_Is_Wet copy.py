@@ -1,12 +1,8 @@
 # WAP - Wet Ass Pussy Madlib
 
 import extras as xs
-import random
-from prompt_toolkit import prompt
-# from _typeshed import NoneType
 
 # Variables
-def word_s():
     words = []
     pnoun1 = (0, 'Plural Noun: ')
     noun1 = (1, 'Noun(building): ')
@@ -32,16 +28,6 @@ def word_s():
     verb6 = (21, 'Verb: ')
     noun13 = (22, 'Noun: ')
     verb7 = (23, 'Verb: ')
-
-    questions = [pnoun1, noun1, noun2, noun3, adj1, noun4, noun5, noun6, noun7,
-    noun8, verb1, verb2, noun9, prep1, prep2, noun10, verb3, noun11,
-    verb4, noun12, verb5, verb6, noun13, verb7]
-    random.shuffle(questions)
-
-    for id, prompt in questions:
-        words[id] = input(prompt)
-
-word_s()
 
 madlib = f'\n{pnoun1} in this {noun1}\
 \nThere\'s some {pnoun1} in this {noun1}\
