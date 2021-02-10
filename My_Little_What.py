@@ -51,7 +51,6 @@ print(xs.sep)
 print(original)
 print(xs.sep)
 
-# print(xs.madlib)
 
 input('Press ENTER to quit')
 
