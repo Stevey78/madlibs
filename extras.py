@@ -1,4 +1,5 @@
 import random
+
 # Formatting
 
 sep = '<====================>'

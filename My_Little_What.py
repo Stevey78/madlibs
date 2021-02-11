@@ -4,39 +4,29 @@ import extras as xs
 import random
 
 # variables for madlib
+print('Please choose word to fit this theme:')
+word = ['animal','astronomy','baseball','beach','castles','clothes','driving','elements','family','farm','fish','furniture','halloween','human body','kitchen','maps','money','music','ocean','plants','presidents','queens','school','sex','shapes','spring','summer','theater','tools','US States','vacation','weather','winter']
+x = random.choice(word)
+y = x.upper()
+print(y)
 
-noun = [input('Noun: ') for _ in range(5)]
-random.shuffle(noun)
+noun = xs.noun(9)
+adjs = xs.adjs(6)
+verb = xs.verb(2)
 
-adjs = [input('Adjectives: ') for _ in range(8)]
-random.shuffle(adjs)
- 
-# prep = [input('Preposition: ') for _ in range(1)]
-# random.shuffle(prep)
 
-verb = [input('Verb: ')for _ in range (2)]
-random.shuffle(verb)
-
-# adverb = [input('Adverb: ') for _ in range(1)]
-# random.shuffle(adverb)
-
-pnoun = [input('Pronoun: ') for _ in range(3)]
-random.shuffle(pnoun)
-
-pnoun1,pnoun2,pnoun3 = pnoun
-adverb1 = input('adverb: ')
 verb1,verb2 = verb
-prep1 = input('preposition: ')
-noun1,noun2,noun3,noun4,noun5 = noun
-adjs1,adjs2,adjs3,adjs4,adjs5,adjs6,adjs7,adjs8 = adjs
+noun1,noun2,noun3,noun4,noun5,noun6,noun7,noun8,noun9 = noun
+adjs1,adjs2,adjs3,adjs4,adjs6,adjs8 = adjs
+adjs5 = input('2 word Adjective: ')
 
 # madlib
 
 madlib = f'\nWhen I was {adjs1} I was too {adjs2} to make any {noun1}.\
-\nSuch {adjs3} did not seem {prep1} the {noun2} it {verb1}.\
-\nBut my {adjs4} {pnoun1}, you {verb2} up my {pnoun2}\
-\nAnd now the {noun3} is {adjs5} {adverb1}, as {adjs6} {adjs7} {pnoun3}.\
-\nAnd it\'s such a {adjs8} {noun4}.\n'
+\nSuch {noun2} did not seem {adjs3} the {noun3} it {verb1}.\
+\nBut my {adjs4} {noun4}, you {verb2} up my {noun5}\
+\nAnd now the {noun6} is {adjs5}, as {adjs6} {noun7} {noun8}.\
+\nAnd it\'s such a {adjs8} {noun9}.\n'
 
 print(xs.sep)
 print(madlib)
@@ -46,7 +36,7 @@ input('Press ENTER to see the original')
 
 original = '\nWhen I was young I was too busy to make any friends. \
 \nSuch silliness did not seem worth the effort it expends. \
-\nBut my little ponies, you opened my eyes \
+\nBut my little ponies, you opened up my eyes \
 \nAnd now the truth is crystal clear, as splendid summer skies. \
 \nAnd it\'s such a wonderful surprise.\n'
 
