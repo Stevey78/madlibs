@@ -5,7 +5,7 @@ import random
 
 # variables for madlib
 print('Please choose word to fit this theme:')
-word = ['animal','astronomy','baseball','beach','castles','clothes','driving','elements','family','farm','fish','furniture','halloween','human body','kitchen','maps','money','music','ocean','plants','presidents','queens','school','sex','shapes','spring','summer','theater','tools','US States','vacation','weather','winter']
+word = xs.words
 x = random.choice(word)
 y = x.upper()
 print(y)
