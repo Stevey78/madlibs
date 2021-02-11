@@ -2,7 +2,7 @@ import random
 
 # Formatting
 
-sep = '<====================>'
+sep = '<========================================>'
 
 # mad libs
 
@@ -34,6 +34,11 @@ def adverb(amount):
     return adverb
 
 def pnoun(amount):
-    pnoun = [input('Pronoun: ') for _ in range (amount)]
+    pnoun = [input('Pronoun: ') for _ in range(amount)]
     random.shuffle(pnoun)
     return pnoun
+
+def pluralnoun(amount):
+    pluralnoun = [input('Plural Noun: ') for _ in range(amount)]
+    random.shuffle(pluralnoun)
+    return pluralnoun
