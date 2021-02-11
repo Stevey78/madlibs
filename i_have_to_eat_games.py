@@ -11,11 +11,7 @@
 import extras as xs
 import random
 
-print('Please choose word to fit this theme:')
-word = xs.words
-x = random.choice(word)
-y = x.upper()
-print(y)
+xs.theme()
 
 pluralnoun1,pluralnoun2,pluralnoun3,pluralnoun4,pluralnoun5 = xs.pluralnoun(5)
 propernoun_x2 = input('Enter a 2 word proper noun: ')

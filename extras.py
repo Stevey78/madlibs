@@ -6,7 +6,15 @@ sep = '<========================================>'
 
 # mad libs
 
-words = ['animal','astronomy','baseball','beach','castles','clothes','driving','elements','family','farm','fish','furniture','halloween','human body','kitchen','maps','money','music','ocean','plants','presidents','queens','school','sex','shapes','spring','summer','theater','tools','US States','vacation','weather','winter']
+
+def theme():
+    print('Please choose words to fit the following theme: ')
+    words = ['animal','astronomy','baseball','beach','castles','clothes','driving','elements','family','farm','fish','furniture','halloween','human body','kitchen','maps','money','music','ocean','plants','presidents','queens','school','sex','shapes','spring','summer','theater','tools','US States','vacation','weather','winter']
+    x = random.choice(words)
+    y = x.upper()
+    print(y)
+
+
 
 def noun(amount):
     noun = [input('Noun: ') for _ in range(amount)]
