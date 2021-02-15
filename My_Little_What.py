@@ -4,11 +4,13 @@ import extras as xs
 import random
 
 # variables for madlib
-print('Please choose word to fit this theme:')
-word = xs.words
-x = random.choice(word)
-y = x.upper()
-print(y)
+
+xs.theme()
+# print('Please choose word to fit this theme:')
+# word = xs.words
+# x = random.choice(word)
+# y = x.upper()
+# print(y)
 
 noun = xs.noun(9)
 adjs = xs.adjs(6)
